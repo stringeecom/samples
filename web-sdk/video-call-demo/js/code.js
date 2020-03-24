@@ -24,6 +24,7 @@ function settingCallEvent(call1, localVideo, remoteVideo, callButton, answerCall
             answerCallButton.hide();
             localVideo.srcObject = null;
             remoteVideo.srcObject = null;
+            $('#incoming-call-notice').hide();
         }
     });
 
@@ -81,6 +82,8 @@ jQuery(function(){
 
     //RECEIVE CALL
     client.on('incomingcall', function(incomingcall){
+
+        $('#incoming-call-notice').show();
         currentCall = incomingcall;
         settingCallEvent(currentCall, localVideo, remoteVideo, callButton, answerCallButton, endCallButton, rejectCallButton);
 
