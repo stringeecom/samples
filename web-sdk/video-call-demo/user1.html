@@ -50,12 +50,18 @@
                 <div class="container">
                     <h2>Video call Demo</h2>
                     <p>By <a href="https://developer.stringee.com/">stringee.com</a></p>
+                    <div id="incoming-call-notice" style="display: none;">
+                        <div class="spinner-grow text-primary" role="status"  >
+                            <span class="sr-only">Incoming call...</span>
+                        </div>
+                        <h3>Incoming call...</h3>
+                    </div>
                 </div>
                 
             </div>
 
                 <div id="video-container">
-                    <video id="localVideo" autoplay ></video>
+                    <video id="localVideo" autoplay muted></video>
                     <video id="remoteVideo" autoplay style="height: 360px;"></video>
                 </div>
                 
@@ -83,9 +89,9 @@
 
 
     <script>
-        var token = 'eyJjdHkiOiJzdHJpbmdlZS1hcGk7dj0xIiwidHlwIjoiSldUIiwiYWxnIjoiSFMyNTYifQ.eyJqdGkiOiJTS0NFOVhPbkwybk1NenFQMnJZVjVrUjFJSFhKa2lpTHotMTU4NTA2MzA1NyIsImlzcyI6IlNLQ0U5WE9uTDJuTU16cVAycllWNWtSMUlIWEpraWlMeiIsImV4cCI6MTU4NzY1NTA1NywidXNlcklkIjoiZXhfZ2YifQ.qcAAl6M6nckRtmjxq6cTE2VHj9MzhTXyq1eysCT3Rr8';
-        var callerId = 'ex_gf';
-        var calleeId = 'ex_bf';
+        var token = 'ACCESS_TOKEN';
+        var callerId = '';
+        var calleeId = '';
     </script>
 
 
