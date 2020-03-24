@@ -22,6 +22,8 @@ function settingCallEvent(call1, localVideo, remoteVideo, callButton, answerCall
             endCallButton.hide();
             rejectCallButton.hide();
             answerCallButton.hide();
+            localVideo.srcObject = null;
+            remoteVideo.srcObject = null;
         }
     });
 
@@ -63,7 +65,7 @@ jQuery(function(){
 
     //MAKE CALL
     callButton.on('click', function(){
-        currentCall = new StringeeCall(client, nguoiGoi, nguoiDuocGoi, true);
+        currentCall = new StringeeCall(client, callerId, calleeId, true);
 
         settingCallEvent(currentCall, localVideo, remoteVideo, callButton, answerCallButton, endCallButton, rejectCallButton);
 
