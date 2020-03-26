@@ -1,4 +1,4 @@
-<p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="" alt="Stringee logo"></a></p>
+<p align="center"><a href="https://stringee.com" target="_blank" rel="noopener noreferrer"><img width="100" src="https://user-images.githubusercontent.com/62597413/77641268-5b898600-6f8e-11ea-861a-205fddbac56e.png" alt="Stringee logo"></a></p>
 
 <h2 align="center">Giới thiệu về Stringee</h2>
 
