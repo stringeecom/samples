@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoVideoCall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9FT-Ni-EKW">
+                                <rect key="frame" x="32" y="75" width="138" height="212"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="B2M-1G-4Ot"/>
+                                    <constraint firstAttribute="height" constant="212" id="fUU-U7-Q98"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cb-hT-oQf">
+                                <rect key="frame" x="242" y="75" width="138" height="212"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="IKk-Tq-KJt"/>
+                                    <constraint firstAttribute="width" constant="138" id="WUd-0G-5id"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J97-4Z-EwH">
+                                <rect key="frame" x="132" y="361" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="hwh-VW-b0U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="rkT-fj-VAO"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkU-AA-p85">
+                                <rect key="frame" x="172.5" y="471" width="69" height="30"/>
+                                <state key="normal" title="Video Call"/>
+                                <connections>
+                                    <action selector="videoCallButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lm9-G3-aiO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEz-1Z-Y5l">
+                                <rect key="frame" x="181.5" y="547" width="51" height="30"/>
+                                <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answerButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bH-fT-GcM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="J97-4Z-EwH" firstAttribute="top" secondItem="9FT-Ni-EKW" secondAttribute="bottom" constant="74" id="AnH-dA-2mN"/>
+                            <constraint firstItem="9FT-Ni-EKW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="BdA-Eg-lsV"/>
+                            <constraint firstItem="J97-4Z-EwH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hd5-PU-x1q"/>
+                            <constraint firstItem="9FT-Ni-EKW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="Sid-z1-ayl"/>
+                            <constraint firstItem="AEz-1Z-Y5l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bg4-ip-ZQ0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1cb-hT-oQf" secondAttribute="trailing" constant="34" id="ekN-38-jL3"/>
+                            <constraint firstItem="9FT-Ni-EKW" firstAttribute="top" secondItem="1cb-hT-oQf" secondAttribute="top" id="emp-bf-WBA"/>
+                            <constraint firstItem="AEz-1Z-Y5l" firstAttribute="top" secondItem="rkU-AA-p85" secondAttribute="bottom" constant="46" id="n4q-A9-BgK"/>
+                            <constraint firstItem="9FT-Ni-EKW" firstAttribute="bottom" secondItem="1cb-hT-oQf" secondAttribute="bottom" id="rO1-pg-gF9"/>
+                            <constraint firstItem="J97-4Z-EwH" firstAttribute="centerX" secondItem="rkU-AA-p85" secondAttribute="centerX" id="saJ-WE-Kka"/>
+                            <constraint firstItem="rkU-AA-p85" firstAttribute="top" secondItem="J97-4Z-EwH" secondAttribute="bottom" constant="76" id="vrd-nS-Sfk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerButton" destination="AEz-1Z-Y5l" id="AhH-7a-YNb"/>
+                        <outlet property="localVideoView" destination="9FT-Ni-EKW" id="ccW-S9-T2H"/>
+                        <outlet property="remoteVideoView" destination="1cb-hT-oQf" id="d5f-5C-uoB"/>
+                        <outlet property="toUserIdTextField" destination="J97-4Z-EwH" id="J95-to-tdd"/>
+                        <outlet property="videoCallButton" destination="rkU-AA-p85" id="gc6-oQ-QZ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+</document>

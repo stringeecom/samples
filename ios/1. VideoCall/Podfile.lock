@@ -1,0 +1,20 @@
+PODS:
+  - GoogleWebRTC (1.1.27828)
+  - Stringee (1.4.4):
+    - GoogleWebRTC (= 1.1.27828)
+
+DEPENDENCIES:
+  - Stringee
+
+SPEC REPOS:
+  trunk:
+    - GoogleWebRTC
+    - Stringee
+
+SPEC CHECKSUMS:
+  GoogleWebRTC: 55e46bee9ac2a4961542e9571bea589b64493f45
+  Stringee: f07a234ca29d17924d78b9c98b4b5d6fbd140a16
+
+PODFILE CHECKSUM: 50673bf772727a4dcaad24a461f9e0ccb04732d7
+
+COCOAPODS: 1.9.0
