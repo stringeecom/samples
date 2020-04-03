@@ -11,7 +11,7 @@ Bạn có thể tìm hiểu kĩ hơn về API của Stringee tại các đườn
 
 * iOs
     * [Bắt đầu với iOS SDK](https://developer.stringee.com/docs/call-api-getting-started-ios)
-    * [Samples](https://github.com/stringeecom/web-sdk-samples)
+    * [Samples](https://github.com/stringeecom/samples/tree/master/ios)
 
 * Android
     * [Bắt đầu với Android SDK](https://developer.stringee.com/docs/call-api-getting-started-android)
